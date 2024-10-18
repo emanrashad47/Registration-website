@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <style>
+        .info{
+            padding: 1.5rem;
+            line-height: 2rem;
+            margin: 2rem auto;
+            width: 30rem;
+            border: 2px solid #508C9B;
+            border-radius: 10px;
+            color:#508C9B;
+            box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info"></div>
+
+    <script>
+        let indexStart = document.location.search.indexOf('=') + 1;
+        let indexEnd = document.location.search.indexOf('&');
+
+        let name = document.location.search.slice(indexStart, indexEnd).split('+').join(' ');
+        let welcome = document.querySelector('.info');
+        welcome.innerHTML = `<h1><b>Thank you, ${name} for registering in our website. </b></h1>`;
+    </script>
+</body>
+
+</html>

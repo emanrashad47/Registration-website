@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rigestration</title>
+</head>
+<body>
+    <form action="info.html" target="_blank" method="get" id="form">
+        <div class="full-name">
+            <label for="fullname">Name: </label>
+            <input class="input" type="text" id= "fullname" name="name" placeholder="Enter your Name:"required>
+            <span class="NameError spanremove">invalid name</span>
+        </div>
+        
+        <div class="user-email" >
+            <label for="email">Email: </label>
+            <input class="input" type="email" id= "email" name="email" placeholder="useremail@gmail.com" required >
+        </div>
+        
+        <div class="pasword">
+            <label for="passowrd">Password: </label>
+            <input class="input" type="password" id= "password" name="passowrd" required>
+        </div>
+        
+        <div class="repeatpasword">
+            <label for="repeatpassword">Repeat Password: </label>
+            <input class="input" type="password" id= "repeatpassword" name="repeat-passowrd" required >
+            <span class="Passworderror spanremove">password and repeat password should be the same</span>
+            
+        </div>
+
+        <div class="citys">
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="Palestine">Palestine</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Qatar">Qatar</option>
+                
+            </select>
+
+        <div class="agreegation">
+            <input type="checkbox" id="agree" name="agree" value="yes" required>
+            <label for="agree"><a href="#" target="_blank" style="text-decoration: none;color: #1A4870;">I agreed to terms and condition</a></label>
+        </div>
+         <button type="submit" class="submit" disabled>Register</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
